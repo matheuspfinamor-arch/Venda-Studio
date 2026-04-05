@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venda Studio - Arquitetura e Design de Interiores em São Paulo. Projetos personalizados, consultoria e acompanhamento de obra. Transforme seu espaço.">
+    <meta name="keywords" content="arquitetura, design de interiores, reforma, São Paulo, projetos personalizados, consultoria">
+    <meta name="author" content="Venda Studio">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Venda Studio - Arquitetura e Design de Interiores">
+    <meta property="og:description" content="Transforme seu espaço com projetos personalizados de arquitetura e design.">
+    <meta property="og:url" content="https://vendastudio.com.br">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Venda Studio">
+    <meta name="twitter:description" content="Arquitetura e Design de Interiores em São Paulo">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://vendastudio.com.br">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%231a1a1a'>V</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Venda Studio",
+        "image": "https://vendastudio.com.br/logo.png",
+        "description": "Arquitetura e Design de Interiores",
+        "url": "https://vendastudio.com.br",
+        "telephone": "+5511999999999",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Exemplo, 123",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "01234-567",
+            "addressCountry": "BR"
+        },
+        "sameAs": [
+            "https://instagram.com/vendastudio",
+            "https://facebook.com/vendastudio"
+        ]
+    }
+    </script>
+    
+    <title>Venda Studio - Arquitetura e Design de Interiores em São Paulo</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           TIPOGRAFIA
+           ============================================ */
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #c0392b;
+        }
+
+        /* ============================================
+           LAYOUT
+           ============================================ */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 0;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        /* ============================================
+           HEADER
+           ============================================ */
+
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo span {
+            color: #e74c3c;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #1a1a1a;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #1a1a1a;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: #ffffff;
+                padding: 1rem;
+                gap: 1rem;
+                display: none;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* ============================================
+           HERO
+           ============================================ */
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 7rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           BOTÕES
+           ============================================ */
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* ============================================
+           SEÇÕES
+           ============================================ */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #e74c3c;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+        }
+
+        /* ============================================
+           CARDS
+           ============================================ */
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* ============================================
+           GRID
+           ============================================ */
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        @media (max-width: 768px) {
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: #e74c3c;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           FORMULÁRIO
+           ============================================ */
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* ============================================
+           UTILITÁRIOS
+           ============================================ */
+
+        .text-center {
+            text-align: center;
+        }
+
+        .bg-light {
+            background-color: #f9f9f9;
+        }
+
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .mt-4 { margin-top: 2rem; }
+
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+
+        /* ============================================
+           BOTÕES FLUTUANTES
+           ============================================ */
+
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border: none;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .floating-btn-whatsapp {
+            background-color: #25d366;
+        }
+
+        .floating-btn-whatsapp:hover {
+            background-color: #1fa857;
+        }
+
+        .floating-btn-instagram {
+            background-color: #e1306c;
+        }
+
+        .floating-btn-instagram:hover {
+            background-color: #c13584;
+        }
+
+        @media (max-width: 768px) {
+            .floating-buttons {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ============================================
+           ANIMAÇÕES
+           ============================================ */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 3rem 0;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .nav-links {
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Venda <span>Studio</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transforme Seu Espaço</h1>
+            <p>Arquitetura e Design de Interiores Personalizados para Sua Casa</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary btn-lg">Solicitar Orçamento</a>
+                <a href="#portfolio" class="btn btn-outline btn-lg">Ver Portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Venda Studio</h2>
+                <p>Transformando espaços desde 2009</p>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <h3>Nossa História</h3>
+                    <p>A Venda Studio foi fundada em 2009 com a missão de transformar espaços através de projetos inovadores e personalizados. Ao longo de mais de 15 anos, desenvolvemos centenas de projetos que refletem a qualidade, criatividade e dedicação de nossa equipe.</p>
+                    <p>Acreditamos que cada espaço tem uma história única e merece um projeto que respeite as necessidades, desejos e personalidade de quem o habita.</p>
+                </div>
+                <div>
+                    <h3>Por Que Escolher a Gente?</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 1rem;">✓ <strong>Equipe Especializada:</strong> Profissionais com mais de 15 anos de experiência</li>
+                        <li style="margin-bottom: 1rem;">✓ <strong>Projetos Personalizados:</strong> Cada projeto é único e desenvolvido conforme suas necessidades</li>
+                        <li style="margin-bottom: 1rem;">✓ <strong>Cronograma Garantido:</strong> Cumprimento rigoroso dos prazos estabelecidos</li>
+                        <li style="margin-bottom: 1rem;">✓ <strong>Atendimento Dedicado:</strong> Acompanhamento próximo em todas as etapas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em arquitetura e design de interiores</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>🏗️ Projetos Arquitetônicos</h3>
+                    <p>Desenvolvimento completo de projetos com plantas, cortes, fachadas e especificações técnicas detalhadas.</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Design de Interiores</h3>
+                    <p>Criação de ambientes personalizados com seleção de materiais, cores, móveis e acabamentos.</p>
+                </div>
+                <div class="card">
+                    <h3>👷 Acompanhamento de Obra</h3>
+                    <p>Gestão completa da execução do projeto com cronograma, orçamento e qualidade garantida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfólio de Projetos</h2>
+                <p>Conheça os projetos que transformamos em realidade</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Residência Jardins</h3>
+                    <p style="color: #e74c3c; font-weight: 600; margin-bottom: 1rem;">Projeto Completo | 2023</p>
+                    <p>Projeto arquitetônico completo de residência unifamiliar com 250m². Inclui reformulação de layout e design de interiores.</p>
+                </div>
+                <div class="card">
+                    <h3>Apartamento Vila Mariana</h3>
+                    <p style="color: #e74c3c; font-weight: 600; margin-bottom: 1rem;">Design de Interiores | 2023</p>
+                    <p>Reforma completa de apartamento de 150m² com modernização de layout e seleção de materiais premium.</p>
+                </div>
+                <div class="card">
+                    <h3>Casa Brooklin</h3>
+                    <p style="color: #e74c3c; font-weight: 600; margin-bottom: 1rem;">Reforma e Ampliação | 2022</p>
+                    <p>Projeto de ampliação e reforma de residência com criação de novo espaço de convivência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Números -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Números</h2>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); text-align: center;">
+                <div>
+                    <h3 style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 0.5rem;">15+</h3>
+                    <p>Anos de Experiência</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 0.5rem;">300+</h3>
+                    <p>Projetos Realizados</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 0.5rem;">250+</h3>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 0.5rem;">98%</h3>
+                    <p>Taxa de Satisfação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>O Que Nossos Clientes Dizem</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"A Venda Studio transformou minha casa em um espaço que sempre sonhei. Profissionalismo impecável!"</p>
+                    <strong>Maria Silva</strong>
+                    <p style="color: #999; font-size: 0.9rem;">Residência Jardins</p>
+                </div>
+                <div class="card">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Equipe atenciosa, criativa e comprometida. Recomendo para todos que buscam qualidade!"</p>
+                    <strong>João Santos</strong>
+                    <p style="color: #999; font-size: 0.9rem;">Apartamento Vila Mariana</p>
+                </div>
+                <div class="card">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Projeto entregue no prazo e dentro do orçamento. Excelente trabalho!"</p>
+                    <strong>Ana Costa</strong>
+                    <p style="color: #999; font-size: 0.9rem;">Casa Brooklin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para ouvir suas ideias</p>
+            </div>
+            <div class="grid grid-2">
+                <div>
+                    <h3>Informações de Contato</h3>
+                    <div style="margin: 2rem 0;">
+                        <p><strong>📞 Telefone:</strong></p>
+                        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                    </div>
+                    <div style="margin: 2rem 0;">
+                        <p><strong>📧 Email:</strong></p>
+                        <p><a href="mailto:contato@vendastudio.com.br">contato@vendastudio.com.br</a></p>
+                    </div>
+                    <div style="margin: 2rem 0;">
+                        <p><strong>📍 Endereço:</strong></p>
+                        <p>Rua Exemplo, 123<br>São Paulo, SP 01234-567</p>
+                    </div>
+                    <div style="margin: 2rem 0;">
+                        <p><strong>⏰ Horário:</strong></p>
+                        <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+                        <div class="form-group">
+                            <label for="name">Nome *</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" required placeholder="Conte-nos sobre seu projeto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section>
+        <div class="container text-center">
+            <h2>Pronto para Transformar Seu Espaço?</h2>
+            <p style="font-size: 1.1rem; margin: 1.5rem 0; color: #666;">Receba uma consultoria gratuita</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consultoria gratuita com a Venda Studio." class="btn btn-primary btn-lg">Agendar via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Venda Studio</h3>
+                    <p>Arquitetura e Design de Interiores em São Paulo. Transformando espaços e vidas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>📧 contato@vendastudio.com.br</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="https://instagram.com/vendastudio" target="_blank">Instagram</a></li>
+                        <li><a href="https://facebook.com/vendastudio" target="_blank">Facebook</a></li>
+                        <li><a href="https://linkedin.com/company/vendastudio" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Venda Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botões Flutuantes -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre os serviços da Venda Studio." class="floating-btn floating-btn-whatsapp" title="WhatsApp">
+            💬
+        </a>
+        <a href="https://instagram.com/vendastudio" target="_blank" class="floating-btn floating-btn-instagram" title="Instagram">
+            📷
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Menu Mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Animação ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card, section > .container > *').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Rastreamento de eventos
+        function trackEvent(category, action, label) {
+            gtag('event', action, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+
+        // Formulário
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso.`);
+            trackEvent('Form', 'Submit', 'Contact Form');
+            this.reset();
+        });
+
+        // Rastrear cliques nos botões flutuantes
+        document.querySelectorAll('.floating-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const platform = this.classList.contains('floating-btn-whatsapp') ? 'WhatsApp' : 'Instagram';
+                trackEvent('Social', 'Click', platform);
+            });
+        });
+    </script>
+</body>
+</html>
